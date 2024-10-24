@@ -130,7 +130,8 @@ int main()
 		printf("Escolha a opção desejada:\n\n");
 		printf("\t1 - Registrar Nomes\n"); // \t responsavel por dar espaço no começo da frase
 		printf("\t2 - Consultar Alunos\n");
-		printf("\t3 - Deletar Nomes\n\n");
+		printf("\t3 - Deletar Nomes\n");
+		printf("\t4 - Sair\n\n");
 		printf("Qual opção deseja para continuarmos?:");
 
 		scanf("%d", &opcao); //scan serve para escanear as informações digitadas pelo usuário
@@ -151,6 +152,11 @@ int main()
 		
 		case 3:
 		deletar(); //chamada de função
+		break;
+		
+		case 4:
+		printf("Obrigado por utilizar meu sistema, volte sempre! :D\n\n");
+		return 0;
 		break;
 		
 		default:
